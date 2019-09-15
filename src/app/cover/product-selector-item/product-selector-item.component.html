@@ -1,11 +1,11 @@
-<a routerLink="/product/{{songSelectorItem.id}}" routerLinkActive="active">
-  <div class="songSelectorItem">
+<a routerLink="/product/{{productSelectorItem.id}}" routerLinkActive="active">
+  <div class="productSelectorItem">
       <ng-container *ngIf="showReal">
-        <img class="songSelectorThumb" [src]="imageUrl" [alt]="this.songSelectorItem.thumbnail.alt">
+        <img class="productSelectorThumb" [src]="imageUrl" [alt]="this.productSelectorItem.thumbnail.alt">
       </ng-container>
       <ng-container *ngIf="!showReal">
-          <div class="songSelectorThumb"></div>
+          <div class="productSelectorThumb"></div>
       </ng-container>
-      <span *ngIf="showReal" class="songTitle">{{songSelectorItem.name}}</span>
+      <span *ngIf="showReal" class="productTitle">{{productSelectorItem.name}}</span>
   </div>
 </a>

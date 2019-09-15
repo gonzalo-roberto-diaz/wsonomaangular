@@ -44,7 +44,6 @@ export class MenuComponent implements OnInit {
 
 
   async flagTypeSelected(flagType: string) {
-    // this.defaultSOngOrderBy();
     this.globals.inCover = true;
     switch (flagType) {
       case 'organic':

@@ -13,7 +13,7 @@ import {OrderProductsBy} from "app/models/OrderProductsBy";
 })
 export class CoverComponent implements OnInit {
 
-    public songSelectors: Product[];
+    public productSelectors: Product[];
 
     constructor(private route: ActivatedRoute, private catalogService: CatalogService, private globals: Globals) {
 
@@ -30,7 +30,7 @@ export class CoverComponent implements OnInit {
 
     async ngOnInit() {
         this.globals.inCover = true;
-        this.songSelectors = this.globals.catalog;
+        this.productSelectors = this.globals.catalog;
 
 
         if (this.globals.orderProductsBy == null){
@@ -47,15 +47,15 @@ export class CoverComponent implements OnInit {
                 this.globals.mainHeader  = "Fair Trade Products";
             }
 
-            this.catalogService.retrieveSelectorsByTag(this.globals.flagType, this.globals.orderProductsBy).then(songs => {
-                this.songSelectors = songs;
+            this.catalogService.retrieveSelectorsByTag(this.globals.flagType, this.globals.orderProductsBy).then(products => {
+                this.productSelectors = products;
                 this.globals.urlKey = null;
             })
 
 
-        } else { //no elements after the url part, meaning show all songs
-            this.catalogService.retrieveAllSelectors(this.globals.orderProductsBy).then(songs => {
-                this.songSelectors = songs;
+        } else { //no elements after the url part, meaning show all
+            this.catalogService.retrieveAllSelectors(this.globals.orderProductsBy).then(products => {
+                this.productSelectors = products;
                 this.globals.urlKey = null;
                 this.globals.flagType = null;
             });

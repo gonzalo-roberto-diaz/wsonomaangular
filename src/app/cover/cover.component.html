@@ -1,9 +1,9 @@
 <ng-container>
 
         <div class="cover" role="region">
-            <div *ngFor="let songSelector of songSelectors ; let i=index">
+            <div *ngFor="let productSelector of productSelectors ; let i=index">
                 <app-product-selector-item
-                        [songSelectorItem]="songSelector"
+                        [productSelectorItem]="productSelector"
                         [selectorIndex]="i">
                 </app-product-selector-item>
             </div>

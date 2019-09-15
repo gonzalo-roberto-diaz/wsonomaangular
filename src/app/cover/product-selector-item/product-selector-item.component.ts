@@ -15,7 +15,7 @@ import {isPlatformBrowser} from "@angular/common";
 })
 export class ProductSelectorItemComponent implements OnInit {
 
-    @Input() songSelectorItem: Product;
+    @Input() productSelectorItem: Product;
     public imageUrl: string;
     public  intersectionObserver;
     public showReal: boolean;
@@ -34,7 +34,7 @@ export class ProductSelectorItemComponent implements OnInit {
             this.showReal = entry != null;
         });
 
-        this.imageUrl =  this.songSelectorItem.thumbnail.href ;
+        this.imageUrl =  this.productSelectorItem.thumbnail.href ;
         if (this.intersectionObserver != null) {
             this.intersectionObserver.observe(this.ref.nativeElement);
         }

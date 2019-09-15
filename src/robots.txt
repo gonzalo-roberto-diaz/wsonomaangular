@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://hindustanisongs.com/sitemap.xml
+Sitemap: http://localhost:4200/sitemap.xml

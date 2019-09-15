@@ -1,16 +1,16 @@
-.songSelectorThumb{
+.productSelectorThumb{
     width: 300px;
     height: 169px;
     padding: 30px 10px 0 10px;
 }
 
 
-.songSelectorItem {
+.productSelectorItem {
     display: flex;
     flex-flow: column wrap;
 }
 
-.songTitle {
+.productTitle {
     background-color: #fafafa;
     text-align: center;
     margin-left: 10px;

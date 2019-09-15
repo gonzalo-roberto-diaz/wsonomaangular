@@ -1,23 +1,23 @@
 <menu>
     <ng-container class="menu-component">
 
-        <button mat-button [matMenuTriggerFor]="songs">Products</button>
+        <button mat-button [matMenuTriggerFor]="products">Products</button>
 
-        <mat-menu #songs="matMenu">
+        <mat-menu #products="matMenu">
             <button mat-menu-item (click)="homeSelected()">All</button>
             <button mat-menu-item  (click)="flagTypeSelected('organic')">Organic</button>
             <button mat-menu-item  (click)="flagTypeSelected('fairTrade')">Fair Trade</button>
         </mat-menu>
 
 
-        <mat-menu #orderSongsBy="matMenu">
+        <mat-menu #orderProductsBy="matMenu">
             <button mat-menu-item (click)="orderProductsBySelected('CHEAPEST_FIRST')">Price</button>
             <button mat-menu-item (click)="orderProductsBySelected('ALPHABETICAL')">Alphabetical</button>
         </mat-menu>
 
 
         <span *ngIf="globals.inCover">
-            <button mat-button [matMenuTriggerFor]="orderSongsBy">Order By</button>
+            <button mat-button [matMenuTriggerFor]="orderProductsBy">Order By</button>
         </span>
 
 
