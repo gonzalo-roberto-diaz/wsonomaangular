@@ -9,4 +9,5 @@ export class Product {
     thumbnail: Image;
     images: Image[];
     flags: Flag[];
+    hero: Image;
 }
