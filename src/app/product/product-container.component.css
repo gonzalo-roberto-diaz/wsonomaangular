@@ -1,0 +1,179 @@
+/* repeat this for every top router-outlet */
+:host{
+    overflow-y: scroll;
+    color: #1a1c1e;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Tahoma, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+.songcontainer-main{
+    display: flex;
+    order: 0;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media (min-width: 1000px) {
+
+    .songcontainer-main{
+        display: flex;
+        order: 0;
+        width: 1000px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+}
+
+
+
+.product-detail {
+    display: flex;
+    width: 90%;
+    flex: 1 0 auto;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+
+
+
+
+
+.paragraph-line{
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.paragraph-block{
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 0 auto;
+    padding: 5px;
+    width: 95%;
+}
+
+/deep/
+.warning-dialog * {
+    font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+/deep/
+.warning-paragraph {
+    font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+
+
+.time-indication {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    width: 195px;
+    cursor: pointer;
+    height: 35px;
+    justify-content: space-around;
+}
+
+.time-indication-number {
+    font-size: small;
+    padding-right: 3px;
+}
+
+.time-indication-filler {
+    margin-top: 10px;
+    margin-bottom: -5px;
+    height: 35px;
+    width: 65px;
+}
+
+
+.murshid-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-bottom: 105px;
+}
+
+/deep/ .selectedRed {
+    color: red;
+}
+
+.relevant {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.irrelevant {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+/deep/ .nastaliq {
+    cursor: pointer;
+    font-family: 'Noto Nastaliq Urdu Draft', serif;
+    padding-left: 4px;
+    /*padding-top: 4px;*/
+    /*padding-bottom: 4px;*/
+}
+
+.translation_word{
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/deep/ .ltrPunctuationMark {
+    display: inline-flex;
+    align-items: center;
+}
+
+/deep/ .rtlPunctuationMark {
+    margin-left: 1%;
+    padding-top: 1.5%;
+    display: inline-flex;
+    align-items: center;
+}
+
+/deep/ .selectedGreen {
+    color: green;
+}
+
+.description{
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    font-size: small;
+}
+
+.priceContainer {
+    height: 2em;
+}
+
+.tagsContainer {
+    height: 2em;
+}
+
+.tagBorder {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: lightgrey;
+    margin-right: 8px;
+}
+

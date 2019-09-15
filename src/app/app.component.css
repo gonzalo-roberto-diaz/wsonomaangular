@@ -1,0 +1,41 @@
+
+.app-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  overflow-y: hidden;
+  height: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+
+
+
+
+@media (min-width: 1000px) {
+
+  .app-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1100px;
+    overflow-y: hidden;
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: Arial, Tahoma, Helvetica, sans-serif;
+  }
+
+}
+
+.murshid-container:after{
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+

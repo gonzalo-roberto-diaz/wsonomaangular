@@ -1,0 +1,24 @@
+<ng-container>
+    <div id="song-container-main" class="songcontainer-main">
+
+            <ng-container *ngIf="isBrowser">
+                <img [src]="product.thumbnail.href">
+            </ng-container>
+            <br>
+
+            <div class="product-detail">
+                <div class="priceContainer">
+                    <strong>Price:&nbsp;</strong>${{product.priceRange.selling.low}}&nbsp;-&nbsp;${{product.priceRange.selling.high}}
+                </div>
+                <div class="tagsContainer">
+                    <strong>Tags:&nbsp;</strong>
+                    <span class="tagBorder" *ngFor="let tag of this.tags">{{tag}}</span>
+                </div>
+            </div>
+
+
+        </div>
+        <div app-footer></div>
+
+
+</ng-container>

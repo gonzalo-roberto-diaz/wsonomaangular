@@ -1,0 +1,11 @@
+<a routerLink="/product/{{songSelectorItem.id}}" routerLinkActive="active">
+  <div class="songSelectorItem">
+      <ng-container *ngIf="showReal">
+        <img class="songSelectorThumb" [src]="imageUrl" [alt]="this.songSelectorItem.thumbnail.alt">
+      </ng-container>
+      <ng-container *ngIf="!showReal">
+          <div class="songSelectorThumb"></div>
+      </ng-container>
+      <span *ngIf="showReal" class="songTitle">{{songSelectorItem.name}}</span>
+  </div>
+</a>

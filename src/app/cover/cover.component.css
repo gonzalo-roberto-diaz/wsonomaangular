@@ -1,0 +1,37 @@
+.cover{
+    display: flex;
+    order: 0;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media (min-width: 1000px) {
+
+    .cover{
+        display: flex;
+        order: 0;
+        width: 1000px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+}
+
+
+:host {
+    padding: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+
+
+
+

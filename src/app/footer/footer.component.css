@@ -1,0 +1,21 @@
+/* repeat this for every top router-outlet */
+:host{
+    background: #1a1c1e;
+    color: #e4e7df;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    font-family: Arial, Tahoma, Helvetica, sans-serif;
+    height: 100px;
+    padding-top: 5px;
+    flex: 1 0 100px;
+    /*max-height: 200px;*/
+}
+
+.global-footer-component {
+    /*width: 130px;*/
+    padding: 7px;
+    /*font-size: 10px;*/
+}
