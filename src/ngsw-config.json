@@ -6,7 +6,7 @@
       "installMode": "prefetch",
       "resources": {
         "files": [
-          "/favicon.ico",
+          "/wsonoma.ico",
           "/index.html",
           "/*.css",
           "/*.js"

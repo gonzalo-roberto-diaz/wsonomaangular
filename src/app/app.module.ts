@@ -29,6 +29,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import {ServiceWorkerModule} from "@angular/service-worker";
 import {environment} from "../environments/environment.prod";
+import {OwlModule} from "ngx-owl-carousel";
 export const APP_ID = 'my-app';
 
 @NgModule({
@@ -38,7 +39,7 @@ export const APP_ID = 'my-app';
     ProductSelectorItemComponent,
     ProductContainerComponent,
     MenuComponent,
-    FooterComponent,
+    FooterComponent
   ],
     imports: [
         BrowserModule.withServerTransition({appId: APP_ID}),
@@ -53,6 +54,7 @@ export const APP_ID = 'my-app';
         MatSidenavModule,
         MatListModule, MatRadioModule, MatIconModule, MatDialogModule,
         MatMenuModule,
+        OwlModule,
         ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
     ],
   providers: [CatalogService, Globals, ProductModelResolver],

@@ -30,7 +30,8 @@ export class ProductSelectorItemComponent implements OnInit {
 
     async ngOnInit() {
         if (isPlatformBrowser(this.platformId)) this.intersectionObserver = new IntersectionObserver((entries: IntersectionObserverEntry[]): void => {
-            this.showReal = true;
+            const entry = entries[0];
+            this.showReal = entry != null;
         });
 
         this.imageUrl =  this.songSelectorItem.thumbnail.href ;

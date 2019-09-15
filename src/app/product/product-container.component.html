@@ -1,8 +1,8 @@
 <ng-container>
-    <div id="song-container-main" class="songcontainer-main">
+    <div class="productcontainer-main">
 
             <ng-container *ngIf="isBrowser">
-                <img [src]="product.thumbnail.href">
+                <img [src]="heroImage">
             </ng-container>
             <br>
 
@@ -14,11 +14,18 @@
                     <strong>Tags:&nbsp;</strong>
                     <span class="tagBorder" *ngFor="let tag of this.tags">{{tag}}</span>
                 </div>
+
+                <owl-carousel id="product-slider" [options]="slideOptions" [items]="slideImages" [carouselClasses]="['owl-theme', 'sliding']" >
+                    <div class="item" *ngFor="let img of slideImages">
+                        <div style="align-content: flex-start; padding-right: 10px;" (click)="thumbHovered(img)">
+                            <img style="height:100px; width:auto" src="{{img}}"/>
+                        </div>
+                    </div>
+                </owl-carousel>
+
             </div>
 
 
         </div>
-        <div app-footer></div>
-
 
 </ng-container>

@@ -10,7 +10,7 @@
     padding-top: 5px;
 }
 
-.songcontainer-main{
+.productcontainer-main{
     display: flex;
     order: 0;
     width: 100%;
@@ -20,7 +20,7 @@
 
 @media (min-width: 1000px) {
 
-    .songcontainer-main{
+    .productcontainer-main{
         display: flex;
         order: 0;
         width: 1000px;
@@ -31,15 +31,13 @@
 }
 
 
-
 .product-detail {
     display: flex;
     width: 90%;
     flex: 1 0 auto;
     flex-flow: column nowrap;
-    align-items: stretch;
+    align-items: center;
     padding: 20px;
-    border: 1px solid blue;
 }
 
 
@@ -168,6 +166,7 @@
 
 .tagsContainer {
     height: 2em;
+    padding: 10px;
 }
 
 .tagBorder {

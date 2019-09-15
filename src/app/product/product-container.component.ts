@@ -15,6 +15,7 @@ import {Product} from '../models/Product';
 import {isPlatformBrowser} from '@angular/common';
 import {Meta, Title} from '@angular/platform-browser';
 import {Globals} from "../globals";
+import * as $ from 'jquery';
 
 @Component({
     selector: '[app-productcontainer]',
@@ -31,6 +32,9 @@ export class ProductContainerComponent implements OnInit, OnDestroy {
     public product: Product;
     public tags: string[];
     public isBrowser;
+    public heroImage: string;
+    public slideOptions= { items: 3, dots: true, nav: true, autoWidth: true};
+    public slideImages: string[];
 
 
     constructor(private route: ActivatedRoute, private router: Router, private elementRef: ElementRef,
@@ -53,12 +57,16 @@ export class ProductContainerComponent implements OnInit, OnDestroy {
                 this.meta.updateTag({ name: 'description', content: this.product.name});
                 this.globals.mainHeader = this.product.name;
                 this.tags = this.product.flags.map(f => f.id);
+                this.heroImage = this.product.hero.href;
+                this.slideImages = this.product.images.map(img => img.href);
+                this.slideImages.push(this.heroImage);
             }
         });
 
+    }
 
-        this.changeDetector.detectChanges();
-
+    thumbHovered(image: string) {
+        this.heroImage = image;
     }
 
     ngOnDestroy() {
