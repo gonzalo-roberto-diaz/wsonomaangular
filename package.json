@@ -39,7 +39,7 @@
     "compression-webpack-plugin": "^3.0.0",
     "core-js": "^2.5.7",
     "express": "^4.16.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ngx-owl-carousel": "^2.0.7",
     "ngx-youtube-player": "^7.1.1",
     "owl.carousel": "^2.3.4",
